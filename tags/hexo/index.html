@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>hexo | Hexo</title>
-  <meta name="author" content="John Doe">
+  <title>hexo | Siyuan&#39;s Blog</title>
+  <meta name="author" content="Siyuan Ma">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:site_name" content="Siyuan&#39;s Blog"/>
 
   
     <meta property="og:image" content="undefined"/>
   
 
   <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="Siyuan&#39;s Blog" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
@@ -38,7 +38,7 @@
 
 <body>
   <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">Hexo</a></h1>
+  <h1><a href="/">Siyuan&#39;s Blog</a></h1>
   <h2><a href="/"></a></h2>
 </div>
 <nav id="main-nav" class="alignright">
@@ -100,13 +100,13 @@
 <figure class="highlight markup"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">google_analytics</span>: <span class="string">Tracking-ID</span></div></pre></td></tr></table></figure>
 
 <h4 id="Adjust_Layout"><strong>Adjust Layout</strong></h4>
-<p>I would like the sidebar in theme <em>light</em> taking less space. To achieve this adjustment, two css files need to be modified. One defines the main column width in <strong>light/source/css/_base/layout.styl</strong>:</p>
+<p>I would like to have the sidebar in theme <em>light</em> taking less space. To achieve this adjustment, two css files need to be modified. One defines the main column width in <strong>light/source/css/_base/layout.styl</strong>:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="id">#main-col</span></div><div class="line">  <span class="tag">width</span> 950<span class="tag">px</span></div><div class="line">  <span class="at_rule">@<span class="keyword">media</span> screen and (max-width: <span class="number">1260</span>px)</span></div><div class="line">    width <span class="number">100</span>%</div><div class="line">    margin-right -<span class="number">250</span>px</div><div class="line">  @media screen and (max-width: <span class="number">950</span>px)</div><div class="line">    margin-right <span class="number">0</span></div><div class="line">    float none</div><div class="line">#wrapper</div><div class="line">  @media screen and (max-width: <span class="number">1260</span>px)</div><div class="line">    margin-right <span class="number">250</span>px</div><div class="line">  @media screen and (max-width: <span class="number">950</span>px)</div><div class="line">    margin-right <span class="number">0</span></div></pre></td></tr></table></figure>
 
 <p>Another defines sidebar width in <strong>light/source/css/_partial/sidebar.styl</strong>:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">width</span> 220<span class="tag">px</span></div><div class="line">  <span class="tag">line-height</span> 1<span class="class">.8em</span></div><div class="line">  <span class="at_rule">@<span class="keyword">media</span> screen and (max-width: <span class="number">950</span>px)</span></div></pre></td></tr></table></figure>
 
-<p>These modifications shrinks the width of sidebar by 50px.</p>
+<p>These modifications shrinks the width of the sidebar by 50px. The last step is to commit the change in the <em>light</em> theme folder, then we can re-deploy the website and witness the layout change. </p>
 
       
     </div>
@@ -166,7 +166,7 @@
   </div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2014 John Doe
+  &copy; 2014 Siyuan Ma
   
 </div>
 <div class="clearfix"></div></footer>
