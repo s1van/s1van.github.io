@@ -77,15 +77,15 @@ a:hover {
   }
 }
 #main-col {
-  width: 900px;
+  width: 950px;
 }
 @media screen and (max-width: 1260px) {
   #main-col {
     width: 100%;
-    margin-right: -300px;
+    margin-right: -250px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   #main-col {
     margin-right: 0;
     float: none;
@@ -93,10 +93,10 @@ a:hover {
 }
 @media screen and (max-width: 1260px) {
   #wrapper {
-    margin-right: 300px;
+    margin-right: 250px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   #wrapper {
     margin-right: 0;
   }
@@ -545,10 +545,10 @@ article footer .addthis iframe {
   margin-bottom: 0;
 }
 #sidebar {
-  width: 270px;
+  width: 220px;
   line-height: 1.8em;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   #sidebar {
     float: none;
     width: 100%;
