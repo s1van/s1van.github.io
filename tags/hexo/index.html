@@ -99,6 +99,14 @@
 <p>In the same config file, simply add your tracking ID</p>
 <figure class="highlight markup"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">google_analytics</span>: <span class="string">Tracking-ID</span></div></pre></td></tr></table></figure>
 
+<h4 id="Adjust_Layout"><strong>Adjust Layout</strong></h4>
+<p>I would like the sidebar in theme <em>light</em> taking less space. To achieve this adjustment, two css files need to be modified. One defines the main column width in <strong>light/source/css/_base/layout.styl</strong>:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="id">#main-col</span></div><div class="line">  <span class="tag">width</span> 950<span class="tag">px</span></div><div class="line">  <span class="at_rule">@<span class="keyword">media</span> screen and (max-width: <span class="number">1260</span>px)</span></div><div class="line">    width <span class="number">100</span>%</div><div class="line">    margin-right -<span class="number">250</span>px</div><div class="line">  @media screen and (max-width: <span class="number">950</span>px)</div><div class="line">    margin-right <span class="number">0</span></div><div class="line">    float none</div><div class="line">#wrapper</div><div class="line">  @media screen and (max-width: <span class="number">1260</span>px)</div><div class="line">    margin-right <span class="number">250</span>px</div><div class="line">  @media screen and (max-width: <span class="number">950</span>px)</div><div class="line">    margin-right <span class="number">0</span></div></pre></td></tr></table></figure>
+
+<p>Another defines sidebar width in <strong>light/source/css/_partial/sidebar.styl</strong>:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">width</span> 220<span class="tag">px</span></div><div class="line">  <span class="tag">line-height</span> 1<span class="class">.8em</span></div><div class="line">  <span class="at_rule">@<span class="keyword">media</span> screen and (max-width: <span class="number">950</span>px)</span></div></pre></td></tr></table></figure>
+
+<p>These modifications shrinks the width of sidebar by 50px.</p>
 
       
     </div>
