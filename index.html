@@ -48,6 +48,8 @@
     
       <li><a href="/archives">Archives</a></li>
     
+      <li><a href="/about">About</a></li>
+    
   </ul>
   <div class="clearfix"></div>
 </nav>
@@ -103,6 +105,13 @@
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">width</span> 220<span class="tag">px</span></div><div class="line">  <span class="tag">line-height</span> 1<span class="class">.8em</span></div><div class="line">  <span class="at_rule">@<span class="keyword">media</span> screen and (max-width: <span class="number">950</span>px)</span></div></pre></td></tr></table></figure>
 
 <p>These modifications shrinks the width of the sidebar by 50px. The last step is to commit the change in the <em>light</em> theme folder, then we can re-deploy the website and witness the layout change. </p>
+<h3 id="Add_an_About_Page">Add an About Page</h3>
+<p>The command below will create a folder <strong>source/about</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page <span class="string">"about"</span></div></pre></td></tr></table></figure>
+
+<p>Edit the <em>about/index.md</em> file to change the content. To make the page visible, add it in <em>_config.yml</em> under the theme folder</p>
+<figure class="highlight markup"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">menu</span>:</div><div class="line">  Home: /</div><div class="line">  Archives: /archives</div><div class="line">  About: /<span class="keyword">about</span></div></pre></td></tr></table></figure>
+
 
       
     </div>
