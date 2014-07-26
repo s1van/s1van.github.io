@@ -144,6 +144,15 @@
 <p>Edit the <em>about/index.md</em> file to change the content. To make the page visible, modify <em>_config.yml</em> under the theme folder</p>
 <figure class="highlight markup"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">menu</span>:</div><div class="line">  Home: /</div><div class="line">  Archives: /archives</div><div class="line">  About: /<span class="keyword">about</span></div></pre></td></tr></table></figure>
 
+<h3 id="Add_Sitemap_Plugin">Add Sitemap Plugin</h3>
+<p>First install the plugin with <em>npm</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-sitemap</div></pre></td></tr></table></figure>
+
+<p>Then enable the plugin in the root <em>_config.yml</em> by adding the following lines</p>
+<figure class="highlight markup"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># Plugins</span></div><div class="line">plugins:</div><div class="line">  - hexo-generator-sitemap</div></pre></td></tr></table></figure>
+
+<p>At last, clean the cache and re-generate the content</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean && hexo generate</div></pre></td></tr></table></figure>
 
       
     </div>
