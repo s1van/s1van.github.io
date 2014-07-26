@@ -82,7 +82,7 @@
 <figure class="highlight markup"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="label">deploy:</span></div><div class="line">  type: github</div><div class="line">  repo: git@github<span class="preprocessor">.com</span>:username/username<span class="preprocessor">.github</span><span class="preprocessor">.io</span><span class="preprocessor">.git</span></div></pre></td></tr></table></figure>
 
 <p>Here <strong>username.github.io</strong> is a Github Page project, which is also an accessible domain name. Note the <em>username</em> is your Github account name, and the project name has to be <strong>username.github.io</strong> to enable the Github Page. Once everything is ready, type the following commands. The blog content will be pushed to your Github Page project.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy -m <span class="string">"init"</span></div></pre></td></tr></table></figure>
 
 <h2 id="Customization">Customization</h2>
 <h3 id="Theme">Theme</h3>
@@ -110,7 +110,7 @@
 <p>The command below will create a folder <strong>source/about</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page <span class="string">"about"</span></div></pre></td></tr></table></figure>
 
-<p>Edit the <em>about/index.md</em> file to change the content. To make the page visible, add it in <em>_config.yml</em> under the theme folder</p>
+<p>Edit the <em>about/index.md</em> file to change the content. To make the page visible, modify <em>_config.yml</em> under the theme folder</p>
 <figure class="highlight markup"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">menu</span>:</div><div class="line">  Home: /</div><div class="line">  Archives: /archives</div><div class="line">  About: /<span class="keyword">about</span></div></pre></td></tr></table></figure>
 
 
@@ -122,7 +122,7 @@
         
   
   <div class="tags">
-    <a href="/tags/tutorial/">tutorial</a>, <a href="/tags/hexo/">hexo</a>
+    <a href="/tags/tutorial/">tutorial</a>
   </div>
 
         
@@ -183,10 +183,27 @@
 
   
 <div class="widget tag">
+  <h3 class="title">recent_posts</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/07/26/LevelDB-Anatomy/">LevelDB Anatomy</a>
+      </li>
+    
+      <li>
+        <a href="/2014/07/22/Put-my-blog-upon-a-Hexo/">Put my blog upon a Hexo</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
   <h3 class="title">tags</h3>
   <ul class="entry">
   
-    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
+    <li><a href="/tags/db/">db</a><small>1</small></li>
   
     <li><a href="/tags/tutorial/">tutorial</a><small>1</small></li>
   
@@ -198,7 +215,7 @@
 <div class="widget tagcloud">
   <h3 class="title">tagcloud</h3>
   <div class="entry">
-    <a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/tutorial/" style="font-size: NaNpx;">tutorial</a>
+    <a href="/tags/db/" style="font-size: NaNpx;">db</a><a href="/tags/tutorial/" style="font-size: NaNpx;">tutorial</a>
   </div>
 </div>
 
